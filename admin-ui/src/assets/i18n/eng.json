@@ -38,7 +38,8 @@
     }
   },
   "dashboard": {
-    "welcomeMessage": "Welcome To The National Identification & Registration Authority Administrator Portal!"
+    "welcomeMessage": "The Republic Of Uganda",
+    "detailedMessage": "National Identification & Registration Authority Administrator Portal"
   },
   "center": {
     "title": "Centers",
