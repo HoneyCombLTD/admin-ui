@@ -4,14 +4,14 @@
     [ngStyle]="{ display: screenResize > 840 ? 'none' : 'block' }"
   >
     <button mat-icon-button id="menu" (click)="sideMenuService.openNav()">
-      <mat-icon>menu</mat-icon>
+      <mat-icon style="color: var(--bg-primary)">menu</mat-icon>
     </button>
   </div>
   <div class="mosip-logo">
     <span
       ><img
         src="./assets/images/nira_logo.png"
-       max-height="50"
+       style="max-height: 50px"
         alt="Logo" /></span
     >&nbsp;
     <!-- <span [ngStyle]="{ display: screenResize > 840 ? 'inline-block' : 'none' }"
