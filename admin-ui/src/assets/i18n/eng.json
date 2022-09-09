@@ -38,8 +38,9 @@
     }
   },
   "dashboard": {
-    "welcomeMessage": "The Republic Of Uganda",
-    "detailedMessage": "National Identification & Registration Authority Administrator Portal"
+    "welcomeMessage": "THE REPUBLIC OF UGANDA",
+    "detailedMessage1": "NATIONAL IDENTIFICATION & REGISTRATION AUTHORITY",
+    "detailedMessage2": "ADMINISTRATOR PORTAL"
   },
   "center": {
     "title": "Centers",
