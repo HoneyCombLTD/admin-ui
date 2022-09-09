@@ -8,9 +8,15 @@
     border-bottom: 1px solid mat-color($app-primary, 100);
     padding-bottom: 5px;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
   }
   .discription {
     font-size: mat-font-size($custom-typography, caption);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
   }
   .header--logo {
     vertical-align: middle;

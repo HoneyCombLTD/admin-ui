@@ -11,12 +11,13 @@
         class="header--logo"
         style="max-height: 180px"
       />
-    <hr>
-   <p class="title" *ngIf="labels">
+    
+   <h2 class="title" *ngIf="labels">
     {{labels.welcomeMessage | translate }}
-   </p>
-   <p class="discription" *ngIf="labels">
+   </h2>
+   
+   <h3 class="discription" *ngIf="labels">
     {{labels.detailedMessage | translate }}
-   </p>
+   </h3>
 </div>
 
