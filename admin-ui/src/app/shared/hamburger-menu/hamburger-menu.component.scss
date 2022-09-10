@@ -9,7 +9,7 @@
   }
   .mat-caption {
     text-align: left;
-    color: #0000;
+    color: var(--color-primary-dark);
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 12px;
@@ -25,7 +25,7 @@
       font-weight: 100;
       font-size: 8px;
       text-align: left;
-      color: #0000;
+      color: var(--color-primary-dark);
       position: relative;
       margin-top: 2px;
     }
@@ -42,7 +42,7 @@
       text-align: right;
       visibility: hidden;
       background-color: var(--color-accent);
-      color: #0000;
+      color: var(--color-primary-dark);
       padding: 5px 5px;
       font-size: 7px;
       letter-spacing: 0.1em;
@@ -54,7 +54,7 @@
         margin: auto;
         white-space: pre-line;
         word-break: break-word;
-        color: #0000;
+        color: var(--color-primary-dark);
       }
     }
   }
