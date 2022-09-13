@@ -1,7 +1,7 @@
 @import "../../_theme.scss";
 
 #home-component {
-  margin-top: 16px;
+  margin-top: 30px;
 
   .title {
     // font-size: mat-font-size($custom-typography, body-1);
@@ -11,12 +11,18 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     vertical-align: middle;
+    /* UX enhancement */
+    padding-left: 4%;
+    /* UX enhancement end */
   }
   .discription {
     //  font-size: mat-font-size($custom-typography, caption);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     vertical-align: middle;
+    /* UX enhancement */
+    padding-left: 4%;
+    /* UX enhancement end */
   }
   .header--logo {
     vertical-align: middle;
