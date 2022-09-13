@@ -1,6 +1,6 @@
 {
   "/proxyapi": {
-    "target": "https://admin.techno-associates.live/v1/",
+    "target": "https://admin.techno-associates.live/",
     "secure": true,
     "changeOrigin": true,
     "pathRewrite": {
