@@ -1,8 +1,8 @@
 {
+  "baseUrl": "https://admin.techno-associates.live/v1/",
+  "adminUrl": "/",
   "primaryLangCode": "eng",
   "secondaryLangCode": "fra",
-  "baseUrl": "https://admin.techno-associates.live/v1/",
-  "adminUrl": "/admin/",
   "validateToken": "authmanager/authorize/admin/validateToken",
   "login": "admin/login/",
   "logout": "admin/logout/user",
