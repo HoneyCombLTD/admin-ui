@@ -22,28 +22,31 @@ export class LogoutService {
   ) {}
 
   logout() {
-    this.http
-      .get(
-        `${this.appService.getConfig().baseUrl}${
-          this.appService.getConfig().logout
-        }?redirecturi=${btoa(window.location.href)}`,
-        {
-          observe: "response",
-        }
-      )
-      .subscribe(
-        (res: HttpResponse<ResponseModel<LogoutResponse>>) => {
-          if (res.body.response.status === "Success") {
-            this.redirectService.redirect(
-              window.location.origin + "/admin-ui/"
-            );
-          } else {
-            window.alert(res.body.response.message);
-          }
-        },
-        (error: HttpErrorResponse) => {
-          window.alert(error.message);
-        }
-      );
+    window.location.href = `${this.appService.getConfig().baseUrl}${
+      this.appService.getConfig().logout
+    }?redirecturi=${btoa(window.location.href)}`;
+    // this.http
+    //   .get(
+    //     `${this.appService.getConfig().baseUrl}${
+    //       this.appService.getConfig().logout
+    //     }?redirecturi=`,
+    //     {
+    //       observe: "response",
+    //     }
+    //   )
+    //   .subscribe(
+    //     (res: HttpResponse<ResponseModel<LogoutResponse>>) => {
+    //       if (res.body.response.status === "Success") {
+    //         this.redirectService.redirect(
+    //           window.location.origin + "/admin-ui/"
+    //         );
+    //       } else {
+    //         window.alert(res.body.response.message);
+    //       }
+    //     },
+    //     (error: HttpErrorResponse) => {
+    //       window.alert(error.message);
+    //     }
+    //   );
   }
 }
