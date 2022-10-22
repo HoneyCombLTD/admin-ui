@@ -4,23 +4,23 @@
     [ngStyle]="{ display: screenResize > 840 ? 'none' : 'block' }"
   >
     <button mat-icon-button id="menu" (click)="sideMenuService.openNav()">
-      <mat-icon>menu</mat-icon>
+      <mat-icon style="color: var(--bg-primary)">menu</mat-icon>
     </button>
   </div>
   <div class="mosip-logo">
     <span
       ><img
-        src="./assets/images/logo-final.png"
-        width="45"
-        height="45"
+        src="./assets/images/nira_logo.png"
+        style="max-height: 50px"
         alt="Logo" /></span
     >&nbsp;
-    <span [ngStyle]="{ display: screenResize > 840 ? 'inline-block' : 'none' }"
-      ><b class="mosip-text">MOSIP - 5</b
+    <!-- <span [ngStyle]="{ display: screenResize > 840 ? 'inline-block' : 'none' }"
+      >
+      <b class="mosip-text">ADMINISTRATOR PANEL</b
       ><b class="version-txt">
         {{ "headermessage.vesion" | translate }} : {{ appVersion }}</b
       ></span
-    >
+    > -->
   </div>
   <div class="zone">
     <span class="zone-text"

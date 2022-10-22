@@ -1,9 +1,10 @@
 {
-  "primaryLangCode": "eng",
-  "secondaryLangCode": "ara",
   "baseUrl": "https://admin.techno-associates.live/v1/",
   "adminUrl": "/admin-ui/",
-  "validateToken": "admin/authorize/admin/validateToken",
+  "primaryLangCode": "eng",
+  "secondaryLangCode": "fra",
+  "validateToken": "authmanager/authorize/admin/validateToken",
   "login": "admin/login/",
-  "logout": "admin/logout/user"
+  "logout": "admin/logout/user",
+  "templateRepoUrl": "/templates/"
 }

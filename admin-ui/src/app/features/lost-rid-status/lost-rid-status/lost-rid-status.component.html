@@ -67,7 +67,7 @@
         mat-raised-button
         class="footer-button"
         (click)="resetForm()"
-        style="color: #FF4081; background-color: white;"
+        style="color: var(--color-accent); background-color: white;"
         id="reset"
       >
         {{ "lostRID.clearbtn" | translate }}
@@ -78,7 +78,7 @@
         mat-button
         class="footer-button"
         (click)="submit()"
-        style="background-color:#FF4081; color:white;width: 90px !important;"
+        style="background-color:var(--color-accent); color:white;width: 90px !important;"
         id="applyTxt"
       >
         {{ "lostRID.searchbtn" | translate }}
