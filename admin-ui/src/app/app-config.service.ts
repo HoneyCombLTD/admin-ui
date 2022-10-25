@@ -13,22 +13,27 @@ export class AppConfigService {
   async loadAppConfig() {
     this.appConfig = await this.http.get("./assets/config.json").toPromise();
     /*if (this.appConfig.primaryLangCode) {*/
-      this.appConfig["primaryLangCode"] = this.headerService.getUserPreferredLanguage();
-      this.appConfig["secondaryLangCode"] = this.appConfig.secondaryLangCode;
-      this.http.get(this.appConfig.baseUrl + "admin/masterdata/configs").subscribe(
-        (response) => {
-          let responseData = response["response"];
-          this.appConfig["locationHierarchyLevel"] = responseData["locationHierarchyLevel"];
-          this.appConfig["supportedLanguages"] = responseData["supportedLanguages"];
-          this.appConfig["rightToLeftOrientation"] = responseData["rightToLeftOrientation"];
-          this.appConfig["leftToRightOrientation"] = responseData["leftToRightOrientation"];
-          this.appConfig["countryCode"] = responseData["countryCode"];
-          this.appConfig["version"]= responseData["version"];
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
+    this.appConfig["primaryLangCode"] =
+      this.headerService.getUserPreferredLanguage();
+    this.appConfig["secondaryLangCode"] = this.appConfig.secondaryLangCode;
+    this.http.get(this.appConfig.baseUrl + "masterdata/configs").subscribe(
+      (response) => {
+        let responseData = response["response"];
+        this.appConfig["locationHierarchyLevel"] =
+          responseData["locationHierarchyLevel"];
+        this.appConfig["supportedLanguages"] =
+          responseData["supportedLanguages"];
+        this.appConfig["rightToLeftOrientation"] =
+          responseData["rightToLeftOrientation"];
+        this.appConfig["leftToRightOrientation"] =
+          responseData["leftToRightOrientation"];
+        this.appConfig["countryCode"] = "UGA" || responseData["countryCode"]; // TO DO: Check with Backend to Dynamically pick Country Code - UGA Hardcoded
+        this.appConfig["version"] = responseData["version"];
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
     /*}*/
   }
 

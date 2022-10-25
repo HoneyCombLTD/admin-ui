@@ -1,4 +1,7 @@
-<div id="home-component" style="text-align: center;margin-top: 60px;margin-left: -10em;">
+<div
+  id="home-component"
+  style="text-align: center; margin-top: 60px; margin-left: -10em"
+>
   <!-- <h2 class="mat-h1" *ngIf="labels">
     {{labels.welcomeMessage | translate }}
   </h2>
@@ -6,22 +9,21 @@
     {{labels.detailedMessage | translate }}
   </h3> -->
 
-   <img
-        src="assets\images\coat.svg"
-        class="header--logo"
-        style="max-height: 180px"
-      />
-    
-   <h2 class="title" *ngIf="labels">
-    {{labels.welcomeMessage | translate }}
-   </h2>
+  <img
+    src="assets\images\coat.svg"
+    class="header--logo"
+    style="max-height: 180px"
+  />
 
-   <h3 class="discription" *ngIf="labels">
-    {{labels.detailedMessage1 | translate }}
-   </h3>
+  <h2 class="title" *ngIf="labels">
+    {{ labels.welcomeMessage | translate }}
+  </h2>
 
-    <h3 class="discription" *ngIf="labels">
-    {{labels.detailedMessage2 | translate }}
-   </h3>
+  <h3 class="discription" *ngIf="labels">
+    {{ labels.detailedMessage1 | translate }}
+  </h3>
+
+  <h3 class="discription" *ngIf="labels">
+    {{ labels.detailedMessage2 | translate }}
+  </h3>
 </div>
-
