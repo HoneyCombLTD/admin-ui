@@ -1,74 +1,76 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
-import { ParentComponent } from './core/parent/parent.component';
-import { NotFoundComponent } from './shared/not-found/not-found.component';
-import { HomeComponent } from './core/home/home.component';
-import { ErrorComponent } from './shared/error/error.component';
-import { AuthguardService } from './core/services/authguard.service';
-import { LanguageGuard } from './core/services/LanguageGuard';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule, PreloadAllModules } from "@angular/router";
+import { ParentComponent } from "./core/parent/parent.component";
+import { NotFoundComponent } from "./shared/not-found/not-found.component";
+import { HomeComponent } from "./core/home/home.component";
+import { ErrorComponent } from "./shared/error/error.component";
+import { AuthguardService } from "./core/services/authguard.service";
+import { LanguageGuard } from "./core/services/LanguageGuard";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'admin', pathMatch: 'full'},
+  { path: "", redirectTo: "admin", pathMatch: "full" },
   {
-    path: 'admin',
+    path: "admin",
     component: ParentComponent,
     children: [
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
+      { path: "", redirectTo: "home", pathMatch: "full" },
+      { path: "home", component: HomeComponent },
       {
-        path: 'resources',
+        path: "resources",
         loadChildren: () =>
-          import('./features/resources/resources.module').then(
-            m => m.ResourcesModule
-          )
+          import("./features/resources/resources.module").then(
+            (m) => m.ResourcesModule
+          ),
       },
       {
-        path: 'masterdata',
+        path: "masterdata",
         loadChildren: () =>
-          import('./features/masterdata/masterdata.module').then(
-            m => m.MasterdataModule
-          )
+          import("./features/masterdata/masterdata.module").then(
+            (m) => m.MasterdataModule
+          ),
       },
       {
-        path: 'packet-status',
+        path: "packet-status",
         loadChildren: () =>
-          import('./features/packet-status/packet-status.module').then(
-            m => m.PacketStatusModule
-          )
+          import("./features/packet-status/packet-status.module").then(
+            (m) => m.PacketStatusModule
+          ),
       },
       {
-        path: 'rid-status',
+        path: "rid-status",
         loadChildren: () =>
-          import('./features/rid-status/rid-status.module').then(
-            m => m.RidStatusModule
-          )
+          import("./features/rid-status/rid-status.module").then(
+            (m) => m.RidStatusModule
+          ),
       },
       {
-        path: 'lost-rid-status',
+        path: "lost-rid-status",
         loadChildren: () =>
-          import('./features/lost-rid-status/lost-rid-status.module').then(
-            m => m.LostRidStatusModule
-          )
+          import("./features/lost-rid-status/lost-rid-status.module").then(
+            (m) => m.LostRidStatusModule
+          ),
       },
       {
-        path: 'bulkupload',
+        path: "bulkupload",
         loadChildren: () =>
-          import('./features/bulkupload/bulkupload.module').then(
-            m => m.BulkuploadModule
-          )
+          import("./features/bulkupload/bulkupload.module").then(
+            (m) => m.BulkuploadModule
+          ),
       },
       {
-        path: 'keymanager',
+        path: "keymanager",
         loadChildren: () =>
-          import('./features/keymanager/keymanager.module').then(
-            m => m.KeymanagerModule
-          )
-      }
-    ], canActivateChild : [AuthguardService] , canActivate: [LanguageGuard]
+          import("./features/keymanager/keymanager.module").then(
+            (m) => m.KeymanagerModule
+          ),
+      },
+    ],
+    canActivateChild: [AuthguardService],
+    canActivate: [LanguageGuard],
   },
-  { path: 'error', component: ErrorComponent },
-  { path: '**', component: NotFoundComponent },
-  { path: '404', component: NotFoundComponent }
+  { path: "error", component: ErrorComponent },
+  { path: "**", component: NotFoundComponent },
+  { path: "404", component: NotFoundComponent },
 ];
 
 @NgModule({
@@ -77,9 +79,9 @@ const routes: Routes = [
       useHash: true,
       preloadingStrategy: PreloadAllModules,
       enableTracing: false,
-      onSameUrlNavigation: 'reload'
-    })
+      onSameUrlNavigation: "reload",
+    }),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

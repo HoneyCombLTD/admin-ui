@@ -175,7 +175,7 @@
         type="reset"
         mat-button
         class="footer-button"
-        style="color: #FF4081; border: inherit"
+        style="color: var(--color-accent); border: inherit"
         id="reset"
       >
         <img
@@ -187,7 +187,7 @@
         mat-button
         class="footer-button"
         (click)="onNoClick()"
-        style="color: #FF4081; background-color: white;"
+        style="color: var(--color-accent); background-color: white;"
         id="cancel"
       >
         {{ "filters.footerButtons.cancelTxt" | translate }}
@@ -196,7 +196,7 @@
         type="submit"
         mat-button
         class="footer-button"
-        style="background-color:#FF4081; color:white;"
+        style="background-color:var(--color-accent); color:white;"
         id="applyTxt"
       >
         {{ "filters.footerButtons.applyTxt" | translate }}

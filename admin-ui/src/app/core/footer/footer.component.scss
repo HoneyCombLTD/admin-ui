@@ -1,0 +1,44 @@
+.main-footer {
+  font-family: Roboto;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  bottom: -9px;
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 2px;
+  background: #000;
+  border: solid 1px #e7e4e4;
+  text-align: center;
+}
+
+.version-txt {
+  font-size: 8px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0.5em;
+}
+
+.wrapper {
+  background: transparent !important;
+  color: #fff !important;
+  text-align: center;
+  vertical-align: auto;
+}
+
+main-footer {
+  background: #000 !important;
+  color: #fff;
+}
+
+.nira_logo {
+  height: 30px;
+  display: inline-block;
+}
+
+.footer-text {
+  display: inline-block;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 1em;
+}

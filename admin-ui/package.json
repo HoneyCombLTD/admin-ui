@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:dev": "ng serve --proxy-config proxy.conf.json --ssl true",
     "build": "ng build",
+    "start:dev": "ng serve --proxy-config proxy.conf.json --ssl true --port 4500",
+    "pre-dev": "ng serve --host 0.0.0.0 --base-href . --disable-host-check --proxy-config proxy.conf.json --ssl true --port 4500",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
