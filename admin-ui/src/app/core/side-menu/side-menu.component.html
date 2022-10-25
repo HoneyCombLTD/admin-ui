@@ -13,9 +13,7 @@
           style="margin-right: 5px"
           alt="Icon" /></span
       >&nbsp;
-      <span class="menu-list-text"
-        >{{ item?.displayName | translate }} TEST</span
-      >
+      <span class="menu-list-text">{{ item?.displayName | translate }}</span>
     </a>
     <ul class="nav nav-list" *ngIf="!isCollapsed">
       <ng-container *ngFor="let subItem of item?.children; let i = index">
@@ -52,9 +50,7 @@
           style="margin-right: 5px"
           alt="Icon" /></span
       >&nbsp;
-      <span class="menu-list-text"
-        >{{ item?.displayName | translate }} TEST</span
-      >
+      <span class="menu-list-text">{{ item?.displayName | translate }}</span>
     </a>
   </li>
 </ul>
