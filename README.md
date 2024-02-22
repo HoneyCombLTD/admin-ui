@@ -1,6 +1,8 @@
 # Admin Portal
-[![Maven Package upon a push](https://github.com/mosip/keymanager/actions/workflows/push_trigger.yml/badge.svg?branch=release-1.2.0.1)](https://github.com/mosip/admin-ui/actions/workflows/push_trigger.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=release-1.2.0.1&project=mosip_admin-ui&metric=alert_status)](https://sonarcloud.io/dashboard?branch=release-1.2.0.1&id=mosip_admin-ui)
+
+[![Maven Package upon a push](https://github.com/mosip/keymanager/actions/workflows/push_trigger.yml/badge.svg?branch=master)](https://github.com/mosip/admin-ui/actions/workflows/push_trigger.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=mosip_admin-ui&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=mosip_admin-ui)
+
 
 ## Overview
 See [overview and portal user guide](https://docs.mosip.io/1.2.0/modules/administration/admin-portal-user-guide).
@@ -33,4 +35,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## License
 This project is licensed under the terms of [Mozilla Public License 2.0](../LICENSE).
-

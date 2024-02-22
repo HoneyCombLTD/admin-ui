@@ -15,6 +15,9 @@ export class AppConfigService {
     /*if (this.appConfig.primaryLangCode) {*/
       this.appConfig["primaryLangCode"] = this.headerService.getUserPreferredLanguage();
       //this.appConfig["secondaryLangCode"] = this.appConfig.secondaryLangCode;
+
+      this.appConfig["secondaryLangCode"] = this.appConfig.secondaryLangCode;
+
       this.http.get(this.appConfig.baseUrl + "admin/masterdata/configs").subscribe(
         (response) => {
           let responseData = response["response"];
