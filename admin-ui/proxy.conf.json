@@ -1,6 +1,6 @@
 {
   "/proxyapi": {
-    "target": "https://api-internal.techno-associates.live/v1/admin/",
+    "target": "https://ugapi-internal.techno-associates.live/v1/admin/",
     "secure": true,
     "changeOrigin": true,
     "pathRewrite": {
